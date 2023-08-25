@@ -1,0 +1,40 @@
+<!-- Juan Rojas -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: lightblue;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Diarios de Paraguay</h1>
+    <h2>Elige el diario de vuestro gusto, está en la página </h2><h2 id="pag">1</h2>
+
+    <iframe src="https://abc.com.py/" 
+    style="width:700px;height:350px;overflow:scroll;"
+    id="MyFrame"></iframe>
+
+    <br><br>
+
+    <button onClick="backSrc();"><</button>
+
+    <button onClick="newSrc();">></button>
+    <br><br>
+
+    <input type="text" name="fuente" id="fuente"/>
+
+    <button onClick="addSrc();">+</button>
+    
+
+    <script src="scripty.js"></script>
+</body>
+</html>
